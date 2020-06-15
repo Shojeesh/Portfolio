@@ -1,0 +1,17 @@
+
+@import '_mixins.styl'
+
+.row
+	display flex
+	flex-wrap wrap
+	margin 0 -15px
+	flex-direction column
+	+minWidth(medium)
+		flex-direction row
+.column
+	flex-grow 1
+	flex-shrink 1
+	flex-basis 0
+	padding 10px 15px
+	+minWidth(medium)
+		padding 15px 15px

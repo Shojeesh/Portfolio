@@ -1,0 +1,37 @@
+
+@import 'base/mixins'
+@import 'base/variables'
+@import 'base/normalize'
+
+@import 'components/main/header'
+@import 'components/main/footer'
+
+
+*
+	box-sizing: border-box
+html
+	font-size: $rootFontSize
+#root
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+body
+	margin: 0
+	padding: 0
+	font-family: $systemFont
+	font-size: $baseFontSize
+main
+	width: 100%
+	font-size: $baseFontSize
+	flex-grow: 1
+	background: #f6f6f6
+	padding-top: 5rem
+	+mq(medium)
+		padding: 0 0;
+.container
+	width: 100%;
+	max-width: 1140px
+	margin: 0 auto
+	
+
+@import 'base/helpers'

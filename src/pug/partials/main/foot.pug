@@ -1,0 +1,20 @@
+script(src='js/jquery-3.3.1.min.js')
+script.
+	
+	// Detect Mac
+	if(navigator.userAgent.indexOf('Mac') > 0)
+		$('body').addClass('isMacOs');
+
+	// Burger
+
+	$('.burgerBlock').on('click', function(){
+		$('.burger').toggleClass('isOpen');
+		$('.overlayMenu').toggleClass('isOpen');
+		$('body').toggleClass('noScroll');
+	})
+
+	// Toggle More Works
+
+	$('.toggleMore').on('click', function(){
+		$('.mwBlock').toggleClass('isOpen');
+	})

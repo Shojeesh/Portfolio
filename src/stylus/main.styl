@@ -1,0 +1,117 @@
+
+@import 'base/_mixins.styl'
+@import 'base/_variables.styl'
+@import 'base/_normalize.styl'
+@import 'base/_grids.styl'
+
+@import 'components/main/_header.styl'
+@import 'components/main/_footer.styl'
+
+
+*
+	box-sizing border-box
+html
+	font-size rootFontSize
+#root
+	display flex
+	flex-direction column
+	min-height 100vh
+body
+	margin 0
+	padding 0
+	font-family systemFont
+	font-size baseFontSize
+	&.noScroll
+		overflow-y hidden
+main
+	width 100%
+	font-size baseFontSize
+	flex-grow 1
+	padding-top 3rem
+	+minWidth(medium)
+		padding-top 5rem
+		padding 0 0;
+.container
+	width 100%
+	max-width 830px
+	margin 0 auto
+	padding 0 15px
+	&.isLarge
+		max-width 1170px
+a
+	text-decoration none
+	cursor pointer
+.mainBtn
+	width 185px
+	height 45px
+	border solid 2px #101832
+	border-radius 20px
+	color #101832
+	font-size 1.8rem
+	display inline-flex
+	align-items center
+	justify-content center
+	transition background 0.5s
+	text-decoration none
+	user-select none
+	&.isSmall
+		font-size 1.4rem
+		width 135px
+		height 35px
+		border-width 1px
+	&.accent
+		color #fff
+		border solid 2px #fff
+		svg path
+			fill #fff
+		&:hover
+			background #ffd927
+			color #101832
+			border solid 2px #ffd927
+			svg path
+				fill #101832
+	&:hover
+		background #101832
+		color #fff
+		border solid 2px #101832
+		svg path
+			fill #fff
+	svg
+		margin-left 10px
+.overlayMenu
+	width 100%
+	position fixed
+	left 0
+	top 0
+	z-index 1
+	color #101832
+	background #fff
+	transition all 0.7s
+	padding 10px 15px
+	font-size 15px
+	font-weight 600
+	opacity 0
+	line-height 1.6
+	height 100%
+	display flex
+	align-items center
+	justify-content center
+	pointer-events none
+	&.isOpen
+		opacity 1
+		pointer-events auto
+	.container
+		font-size 20px
+		line-height 2
+		text-align center
+		+minWidth(medium)
+			font-size 36px
+	a
+		color #101832
+	.mainBtn
+		margin-top 15px
+		+minWidth(medium)
+			margin-top 5px
+	
+
+@import 'base/_helpers.styl'

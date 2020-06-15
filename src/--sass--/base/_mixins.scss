@@ -1,0 +1,36 @@
+
+
+// Mobile first Media Query
+
+@mixin mq($point) {
+  @if $point == large {
+     @media (min-width: 1200px) { @content ; }
+  }
+  @if $point == medium {
+     @media (min-width: 992px) { @content ; }
+  }
+  @if $point == small {
+     @media (min-width: 769px) { @content ; }
+  }
+  @if $point == tiny {
+     @media (min-width: 361px) { @content ; }
+  }
+}
+
+
+// Web First Media Query
+
+@mixin mqMx($point) {
+   @if $point == large {
+     @media (max-width: 1199px) { @content ; }
+  }
+    @else if $point == medium {
+     @media (max-width: 991px) { @content ; }
+  }
+   @else if $point == small {
+     @media (max-width: 768px)  { @content ; }
+  }
+  @else if $point == tiny {
+     @media (max-width: 360px)  { @content ; }
+  }
+}

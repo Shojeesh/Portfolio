@@ -1,0 +1,14 @@
+mixin projectCard(letter, color, company, task, tech, url)
+	.mwRow
+		.mwLogo
+			.mwlTag(style=color)=letter
+		.mwDesc
+			h4=company
+			p=task
+			p=tech
+		.mwAction
+			a.mainBtn.isSmall(href=url target='_blank')
+				| View Website
+				svg(xmlns='http://www.w3.org/2000/svg', width='4', height='12', viewBox='0 0 6.172 15')
+					g(transform='translate(103.311 15) rotate(180)')
+						path(d='M97.361,8.242l4.655,6.45a.621.621,0,0,0,1.072,0,1.353,1.353,0,0,0,0-1.485L98.969,7.5l4.119-5.707a1.353,1.353,0,0,0,0-1.486.621.621,0,0,0-1.072,0L97.36,6.757a1.353,1.353,0,0,0,0,1.485Z', transform='translate(0 0)', fill='#101832')
