@@ -284,6 +284,10 @@ header {
 	transition-duration: .3s;
 }
 
+.git img {
+	max-width: 26px;
+}
+
 footer {
 	width: 100%;
 	margin-top: auto;
@@ -369,12 +373,12 @@ a {
 }
 
 .mainBtn {
-	width: 185px;
+	width: 145px;
 	height: 45px;
-	border: solid 2px #101832;
+	border: solid 1px #101832;
 	border-radius: 20px;
 	color: #101832;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
 	-ms-flex-align: center;
@@ -398,7 +402,7 @@ a {
 
 .mainBtn.accent {
 	color: #fff;
-	border: solid 2px #fff;
+	border: solid 1px #fff;
 }
 
 .mainBtn.accent svg path {
@@ -408,7 +412,7 @@ a {
 .mainBtn.accent:hover {
 	background: #ffd927;
 	color: #101832;
-	border: solid 2px #ffd927;
+	border: solid 1px #ffd927;
 }
 
 .mainBtn.accent:hover svg path {
@@ -418,7 +422,7 @@ a {
 .mainBtn:hover {
 	background: #101832;
 	color: #fff;
-	border: solid 2px #101832;
+	border: solid 1px #101832;
 }
 
 .mainBtn:hover svg path {

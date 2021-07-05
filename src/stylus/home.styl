@@ -14,7 +14,7 @@
 			font-size 26px
 .workCard
 	width 100%
-	height 245px
+	height 375px
 	border-radius 15px
 	overflow hidden
 	position relative
@@ -37,17 +37,20 @@
 	position absolute
 	top 0
 	left 0
-	opacity 0
 	transition all 0.7s ease-in-out
 	display flex
 	flex-direction column
-	align-items center
-	justify-content center
-.wcDesc
+	align-items flex-start
+	justify-content space-between
+.wcClient
 	font-size 20px
 	color #fff
 	font-weight 600
+.wcDesc
+	font-size 1.6rem
+	color #fff
 	margin-bottom 20px
+	line-height 1.5
 .buttonField
 	margin 20px 0
 	+minWidth(medium)
